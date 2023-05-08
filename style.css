@@ -9,7 +9,7 @@ body {
   }
   .navbar{
     background-color: #594d85;
-    opacity: 95%;
+   
   }
   /*titulo*/
   h1{
@@ -102,7 +102,7 @@ body {
 
   /*panel menu*/
   .offcanvas-end{
-    background-color: #9855a5b6;
+    background-color:rgba(131, 88, 172, 0.9);
     color: plum;
     background-position: center;
   }
