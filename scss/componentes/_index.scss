@@ -19,6 +19,7 @@ body {
 .container {
   margin-left: 5px;
   margin-right: 1%;
+  z-index: 2;
 }
 
 @media screen and (max-width: 576px) {
@@ -55,16 +56,17 @@ body {
   height: 500px;
   gap: 35px;
   position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 576px) {
   .embed-responsive {
     width: 50%;
     margin: 0 auto;
-    gap: 20px;
-    flex-direction: column;
+    gap: 10px;
+    flex-direction:column;
     position: relative;
-    display: flex;
+    display:flex;
   }
 }
 
