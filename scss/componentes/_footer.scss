@@ -1,0 +1,56 @@
+
+.footer {
+  width: 100%;
+  padding: 30px;
+  color: #5056a0;
+  background: none;
+  bottom: 0;
+  @media screen and (max-width: 576px) {
+    padding: $celu;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.div-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+  }
+}
+
+.div-footer img {
+  width: 40px;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 10px;
+  }
+}
+
+.div-footer p {
+  margin: 0;
+  font-size: $font-s;
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+  }
+}
+
+.div-footer a {
+  display: inline-block;
+  @media screen and (max-width: 576px) {
+    margin-bottom: 10px;
+  }
+}
+
+.whatsapp-logo {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  height: $whatsapp-logo-height;
+  @media screen and (max-width: 576px) {
+    display:flex;
+  }
+}

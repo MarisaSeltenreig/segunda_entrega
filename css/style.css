@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+.btn-promo {
+  background-color: #e2dce1;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  border-radius: 20%;
+  border: 5px solid rgb(192, 142, 149);
+}
+
+.my-class {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Space Mono", monospace;
+}
+
+.btn {
+  background-color: rgb(218, 129, 240);
+  border-color: #5f2f8d;
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+}
+
+.footer {
+  width: 100%;
+  padding: 30px;
+  color: #5056a0;
+  background: none;
+  bottom: 0;
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.div-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .div-footer {
+    flex-direction: column;
+  }
+}
+
+.div-footer img {
+  width: 40px;
+}
+@media screen and (max-width: 576px) {
+  .div-footer img {
+    margin-bottom: 10px;
+  }
+}
+
+.div-footer p {
+  margin: 0;
+  font-size: 25px;
+}
+@media screen and (max-width: 576px) {
+  .div-footer p {
+    font-size: 14px;
+  }
+}
+
+.div-footer a {
+  display: inline-block;
+}
+@media screen and (max-width: 576px) {
+  .div-footer a {
+    margin-bottom: 10px;
+  }
+}
+
+.whatsapp-logo {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 9999;
+  height: 70px;
+}
+@media screen and (max-width: 576px) {
+  .whatsapp-logo {
+    display: flex;
+  }
+}
+
+.navbar {
+  background-color: #937deb;
+  background: #e2dce1;
+  background: linear-gradient(to right, #e2dce1 0%, #D4C1CF 33%, #aaacce 100%);
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 200%;
+  color: rgb(77, 40, 45);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "Space Mono", monospace;
+  color: rgb(77, 40, 45);
+  margin-top: 120px;
+}
+
+h2 {
+  text-align: left;
+  color: rgb(77, 40, 45);
+  font-size: 45px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../../img/icon.png");
+  width: 88px;
+  height: 88px;
+}
+
+.carousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel .slides {
+  position: relative;
+  width: 1800px;
+  height: 400px;
+  left: -600px;
+}
+.carousel .slides .slide {
+  float: left;
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+.carousel .btn-prev {
+  float: left;
+}
+.carousel .btn-next {
+  float: right;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+  .navbar-toggler {
+    font-size: 150%;
+  }
+  .navbar-toggler-icon {
+    width: 44px;
+    height: 44px;
+  }
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Space Mono", monospace;
+    margin-top: 60px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+  .carousel .slides {
+    width: 100%;
+    left: 0;
+  }
+  .carousel .slides .slide {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    margin-top: 200px;
+  }
+}
+body {
+  margin-top: 150px;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  background-color: rgba(149, 150, 199, 0.76);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    margin-top: 100px;
+  }
+}
+.container {
+  margin-left: 5px;
+  margin-right: 1%;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.mi-estilo {
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+}
+
+.form-floating {
+  width: 50%;
+  left: 450px;
+}
+
+@media screen and (max-width: 576px) {
+  .form-floating {
+    width: 80%;
+    left: 10%;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+  }
+}
+.embed-responsive {
+  display: flex;
+  margin: 100px;
+  width: 30%;
+  height: 500px;
+  gap: 35px;
+  position: relative;
+}
+
+@media screen and (max-width: 576px) {
+  .embed-responsive {
+    width: 50%;
+    margin: 0 auto;
+    gap: 20px;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+  }
+}
+.img-fluid {
+  height: 500px;
+  margin-top: 100px;
+  border: 3px solid rgb(63, 29, 252);
+}
+
+.img-fluid:hover {
+  transform: scale(1.3);
+  transition: all 1s;
+}
+
+@media screen and (max-width: 576px) {
+  .img-fluid {
+    height: 300px;
+  }
+}
+.accordion-button {
+  background-color: #937deb;
+  color: #f0ddfa;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  border: 1px solid rgb(141, 139, 233);
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .accordion-button {
+    font-size: 16px;
+    min-height: 50px;
+  }
+}
+.accordion-body {
+  background-color: #937deb;
+  color: rgba(250, 248, 253, 0.9176470588);
+  font-size: 25px;
+  min-height: 75px;
+  padding: 10px;
+  border: 1px solid #b0c1fa;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .accordion-body {
+    font-size: 16px;
+    min-height: 50px;
+  }
+}
+.offcanvas-end {
+  background-color: rgba(173, 153, 192, 0.9);
+  color: rgb(218, 129, 240);
+  background-position: center;
+}
+
+.card {
+  font-family: "Space Mono", monospace;
+  font-size: 25px;
+  display: inline-block;
+  background-color: rgb(225, 174, 245);
+  border-radius: 20%;
+  border: 5px;
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 90%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

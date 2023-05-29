@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+.navbar {
+  background-color: $secondary-color;
+  background: $accent-color;
+  background: linear-gradient(to right, $accent-color 0%, #D4C1CF 33%, #aaacce 100%);
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 200%;
+  color: $text-color;
+}
+
+h1 {
+  @include font(60px, 800);
+  color: $text-color;
+  margin-top: 120px;
+}
+
+h2 {
+  text-align: left;
+  color: $text-color;
+  font-size: 45px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("../../img/icon.png");
+  width: 88px;
+  height: 88px;
+}
+
+
+.carousel {
+  position: relative;
+  width: $carousel-width;
+  height: $carousel-height;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .slides {
+    position: relative;
+    width: ($carousel-width * 3);
+    height: $carousel-height;
+    left: -$carousel-width;
+
+    .slide {
+      float: left;
+      position: relative;
+      width: $carousel-width;
+      height: $carousel-height;
+    }
+  }
+
+  .btn-prev {
+    float: left;
+  }
+
+  .btn-next {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    font-size: 150%;
+  }
+
+  .navbar-toggler-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  h1 {
+    @include font(30px, 600);
+    margin-top: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .carousel {
+    width: 100%;
+    height: auto;
+
+    .slides {
+      width: 100%;
+      left: 0;
+
+      .slide {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  h1 {
+    margin-top: 200px; 
+  }
+} 

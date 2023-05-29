@@ -1,0 +1,20 @@
+
+  $colors: (
+  primary: rgb(218, 129, 240) ,
+  secondary: #6c757d,
+  success: #5f2f8d,
+  danger: #dc3545,
+  warning: #ffc107,
+  info: #17a2b8,
+  light: #f8f9fa,
+  dark: #343a40
+);
+.btn{
+    background-color: map-get($colors, primary);
+    border-color: map-get($colors, success);
+    font-family: $font-family;
+    font-size: $font-s;
+
+  }
+  
+ 

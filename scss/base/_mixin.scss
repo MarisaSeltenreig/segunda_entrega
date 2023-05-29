@@ -1,0 +1,20 @@
+@mixin font($size, $weight: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $heading-font;
+}
+ @mixin btn-style($bg-color:rgb(238, 212, 245), $border-radius: 30%, $border-color: rgb(192, 142, 149), $border-width: 5px) {
+    background-color: $bg-color;
+    font-family: $font-family;
+    font-size: $font-s;
+    border-radius: $border-radius;
+    border: $border-width solid $border-color;
+  }
+  .btn-promo {
+    @include btn-style($accent-color, 20%);
+  }
+  .my-class {
+    @include font(20px, normal);
+  }
+  
+  
